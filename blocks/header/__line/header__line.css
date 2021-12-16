@@ -2,3 +2,9 @@
   max-width: 100%;
   margin-top: 41px;
 }
+
+@media screen and (max-width: 600px) {
+  .header__line {
+    margin-top: 26px;
+  }
+}
