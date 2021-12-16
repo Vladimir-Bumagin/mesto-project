@@ -14,6 +14,27 @@
     <meta name="author" content="Владимир Бумагин" />
   </head>
   <body class="page">
+    <div class="popup popup_opened">
+      <form class="popup__container popup__user-info">
+        <button
+          class="button-close-popup button button-close-user-info"
+        ></button>
+        <h2 class="popup__title">Редактировать профиль</h2>
+        <div class="popup__fields">
+          <input
+            type="text"
+            class="popup__input-text popup__field"
+            value="Жак-Ив-Кусто"
+          />
+          <input
+            type="text"
+            class="popup__input-text popup__field"
+            value="Исследователь океана"
+          />
+          <button class="popup__button-save">Сохранить</button>
+        </div>
+      </form>
+    </div>
     <header class="header">
       <img src="./images/logo.svg" alt="Логотип Mesto" class="header__logo" />
       <img
@@ -31,12 +52,12 @@
             alt="Жак-Ив-Кусто на фоне океана"
           />
           <div class="profile__areas">
-            <h1 class="profile__title">Жак-Ив Кусто</h1>
-            <button class="profile__edit-button button-hover"></button>
+            <h1 id="user-name" class="profile__title">Жак-Ив Кусто</h1>
+            <button class="profile__edit-button button"></button>
             <p class="profile__subtitle">Исследователь океана</p>
           </div>
         </div>
-        <button class="profile__add-images-button button-hover"></button>
+        <button class="profile__add-images-button button"></button>
       </section>
       <section class="photo-cards">
         <div class="photo-card">
@@ -49,9 +70,7 @@
           </div>
           <div class="photo-card__caption">
             <h2 class="photo-card__title">Мехико</h2>
-            <button
-              class="like-button like-button_active button-hover"
-            ></button>
+            <button class="like-button like-button_active button"></button>
           </div>
         </div>
         <div class="photo-card">
@@ -64,9 +83,7 @@
           </div>
           <div class="photo-card__caption">
             <h2 class="photo-card__title">Москва</h2>
-            <button
-              class="like-button like-button_active button-hover"
-            ></button>
+            <button class="like-button like-button_active button"></button>
           </div>
         </div>
         <div class="photo-card">
@@ -79,9 +96,7 @@
           </div>
           <div class="photo-card__caption">
             <h2 class="photo-card__title">Дубаи</h2>
-            <button
-              class="like-button like-button_active button-hover"
-            ></button>
+            <button class="like-button like-button_active button"></button>
           </div>
         </div>
         <div class="photo-card">
@@ -94,9 +109,7 @@
           </div>
           <div class="photo-card__caption">
             <h2 class="photo-card__title">Лондон</h2>
-            <button
-              class="like-button like-button_active button-hover"
-            ></button>
+            <button class="like-button like-button_active button"></button>
           </div>
         </div>
         <div class="photo-card">
@@ -109,9 +122,7 @@
           </div>
           <div class="photo-card__caption">
             <h2 class="photo-card__title">Париж</h2>
-            <button
-              class="like-button like-button_active button-hover"
-            ></button>
+            <button class="like-button like-button_active button"></button>
           </div>
         </div>
         <div class="photo-card">
@@ -124,9 +135,7 @@
           </div>
           <div class="photo-card__caption">
             <h2 class="photo-card__title">Нью-Йорк</h2>
-            <button
-              class="like-button like-button_active button-hover"
-            ></button>
+            <button class="like-button like-button_active button"></button>
           </div>
         </div>
       </section>
