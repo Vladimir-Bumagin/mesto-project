@@ -17,4 +17,4 @@ HTML, CSS, реализована адаптивность под десктоп
 
 ### Ссылка на проект
 
-Проект выложен на Githab Pages. Ссылка: []
+Проект выложен на Githab Pages. Ссылка: [https://vladimir-bumagin.github.io/mesto-project/index.html]
