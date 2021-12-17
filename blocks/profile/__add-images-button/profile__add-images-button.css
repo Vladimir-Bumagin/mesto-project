@@ -1,0 +1,17 @@
+.profile__add-images-button {
+  background-color: black;
+  background-image: url(../../../images/AddButton.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 50px;
+  min-width: 150px;
+}
+
+@media screen and (max-width: 600px) {
+  .profile__add-images-button {
+    background-image: url(../../../images/AddButtonMobile.svg);
+    min-width: 282px;
+    margin-top: 36px;
+  }
+}

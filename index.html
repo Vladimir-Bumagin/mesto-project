@@ -14,34 +14,8 @@
     <meta name="author" content="Владимир Бумагин" />
   </head>
   <body class="page">
-    <div class="popup popup_opened">
-      <form class="popup__container popup__user-info">
-        <button
-          class="button-close-popup button button-close-user-info"
-        ></button>
-        <h2 class="popup__title">Редактировать профиль</h2>
-        <div class="popup__fields">
-          <input
-            type="text"
-            class="popup__input-text popup__field"
-            value="Жак-Ив-Кусто"
-          />
-          <input
-            type="text"
-            class="popup__input-text popup__field"
-            value="Исследователь океана"
-          />
-          <button class="popup__button-save">Сохранить</button>
-        </div>
-      </form>
-    </div>
     <header class="header">
       <img src="./images/logo.svg" alt="Логотип Mesto" class="header__logo" />
-      <img
-        src="./images/Line.png"
-        alt="Линия подчёркивания шапки сайта"
-        class="header__line"
-      />
     </header>
     <main class="main-content">
       <section class="profile">
@@ -52,15 +26,15 @@
             alt="Жак-Ив-Кусто на фоне океана"
           />
           <div class="profile__areas">
-            <h1 id="user-name" class="profile__title">Жак-Ив Кусто</h1>
+            <h1 class="profile__title">Жак-Ив Кусто</h1>
             <button class="profile__edit-button button"></button>
             <p class="profile__subtitle">Исследователь океана</p>
           </div>
         </div>
         <button class="profile__add-images-button button"></button>
       </section>
-      <section class="photo-cards">
-        <div class="photo-card">
+      <ul class="photo-cards">
+        <li class="photo-card">
           <div class="photo-card__image-wrapper">
             <img
               src="./images/Mexico.jpg"
@@ -70,10 +44,15 @@
           </div>
           <div class="photo-card__caption">
             <h2 class="photo-card__title">Мехико</h2>
-            <button class="like-button like-button_active button"></button>
+            <button
+              class="
+                photo-card__like-button photo-card__like-button_active
+                button
+              "
+            ></button>
           </div>
-        </div>
-        <div class="photo-card">
+        </li>
+        <li class="photo-card">
           <div class="photo-card__image-wrapper">
             <img
               src="./images/Moscow.jpg"
@@ -83,10 +62,15 @@
           </div>
           <div class="photo-card__caption">
             <h2 class="photo-card__title">Москва</h2>
-            <button class="like-button like-button_active button"></button>
+            <button
+              class="
+                photo-card__like-button photo-card__like-button_active
+                button
+              "
+            ></button>
           </div>
-        </div>
-        <div class="photo-card">
+        </li>
+        <li class="photo-card">
           <div class="photo-card__image-wrapper">
             <img
               src="./images/Dubai.jpg"
@@ -96,10 +80,15 @@
           </div>
           <div class="photo-card__caption">
             <h2 class="photo-card__title">Дубаи</h2>
-            <button class="like-button like-button_active button"></button>
+            <button
+              class="
+                photo-card__like-button photo-card__like-button_active
+                button
+              "
+            ></button>
           </div>
-        </div>
-        <div class="photo-card">
+        </li>
+        <li class="photo-card">
           <div class="photo-card__image-wrapper">
             <img
               src="./images/London.jpg"
@@ -109,10 +98,15 @@
           </div>
           <div class="photo-card__caption">
             <h2 class="photo-card__title">Лондон</h2>
-            <button class="like-button like-button_active button"></button>
+            <button
+              class="
+                photo-card__like-button photo-card__like-button_active
+                button
+              "
+            ></button>
           </div>
-        </div>
-        <div class="photo-card">
+        </li>
+        <li class="photo-card">
           <div class="photo-card__image-wrapper">
             <img
               src="./images/Paris.jpg"
@@ -122,10 +116,15 @@
           </div>
           <div class="photo-card__caption">
             <h2 class="photo-card__title">Париж</h2>
-            <button class="like-button like-button_active button"></button>
+            <button
+              class="
+                photo-card__like-button photo-card__like-button_active
+                button
+              "
+            ></button>
           </div>
-        </div>
-        <div class="photo-card">
+        </li>
+        <li class="photo-card">
           <div class="photo-card__image-wrapper">
             <img
               src="./images/New-York.jpg"
@@ -135,13 +134,42 @@
           </div>
           <div class="photo-card__caption">
             <h2 class="photo-card__title">Нью-Йорк</h2>
-            <button class="like-button like-button_active button"></button>
+            <button
+              class="
+                photo-card__like-button photo-card__like-button_active
+                button
+              "
+            ></button>
           </div>
-        </div>
-      </section>
+        </li>
+      </ul>
     </main>
+    <div class="popup popup_opened">
+      <form
+        name="user-data"
+        class="popup__container popup__user-info-container"
+      >
+        <button class="popup__button-close button"></button>
+        <h2 class="popup__title">Редактировать профиль</h2>
+        <div class="popup__fields">
+          <input
+            name="user-name"
+            type="text"
+            class="popup__input-text-style popup__field"
+            placeholder="Жак-Ив-Кусто"
+          />
+          <input
+            name="career"
+            type="text"
+            class="popup__input-text-style popup__field"
+            placeholder="Исследователь океана"
+          />
+          <button class="popup__button-save">Сохранить</button>
+        </div>
+      </form>
+    </div>
     <footer class="footer">
-      <h3 class="footer__copyright">&copy; 2020 Mesto Russia</h3>
+      <h2 class="footer__copyright">&copy; 2020 Mesto Russia</h2>
     </footer>
   </body>
 </html>

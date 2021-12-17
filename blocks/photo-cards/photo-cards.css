@@ -1,0 +1,17 @@
+.photo-cards {
+  box-sizing: border-box;
+  max-width: 880px;
+  list-style-type: none;
+  margin: 0;
+  padding: 44px 0 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 282px);
+  gap: 20px 17px;
+  justify-content: center;
+}
+
+@media screen and (max-width: 600px) {
+  .photo-cards {
+    padding-top: 36px;
+  }
+}
