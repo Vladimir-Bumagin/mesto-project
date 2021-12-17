@@ -1,7 +1,7 @@
 .profile__areas {
   padding-left: 30px;
   display: grid;
-  grid-template-columns: max-content max-content;
+  grid-template-columns: fit-content(294px) max-content;
   gap: 16px 18px;
 }
 
