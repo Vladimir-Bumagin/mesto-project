@@ -1,4 +1,4 @@
-.popup__button-save {
+.user-info-form__button-save {
   background-color: #000;
   color: #fff;
   line-height: 22px;
@@ -13,7 +13,7 @@
 }
 
 @media screen and (max-width: 520px) {
-  .popup__button-save {
+  .user-info-form__button-save {
     line-height: 17px;
     font-size: 14px;
     margin-top: 46px;
@@ -21,7 +21,7 @@
   }
 }
 
-.popup__button-save:hover {
+.user-info-form__button-save:hover {
   opacity: 0.8;
   transition: 0.8s;
 }

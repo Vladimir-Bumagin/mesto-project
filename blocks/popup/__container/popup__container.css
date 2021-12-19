@@ -1,4 +1,7 @@
 .popup__container {
+  width: 430px;
+  min-height: 330px;
+  padding: 34px 36px 37px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -11,4 +14,11 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+@media screen and (max-width: 520px) {
+  .popup__container {
+    width: 282px;
+    min-height: 322px;
+    padding: 25px 22px;
+  }
 }

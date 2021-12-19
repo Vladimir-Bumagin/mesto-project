@@ -1,0 +1,12 @@
+.user-info-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: calc(330px - 34px - 37px);
+}
+
+@media screen and (max-width: 520px) {
+  .user-info-form {
+    min-height: calc(322px - 25px - 22px);
+  }
+}

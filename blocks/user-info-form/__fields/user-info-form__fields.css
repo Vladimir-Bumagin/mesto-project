@@ -1,4 +1,4 @@
-.popup__fields {
+.user-info-form__fields {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
