@@ -27,11 +27,14 @@
           />
           <div class="profile__areas">
             <h1 class="profile__title">Жак-Ив Кусто</h1>
-            <button class="profile__edit-button button"></button>
+            <button type="button" class="profile__edit-button button"></button>
             <p class="profile__subtitle">Исследователь океана</p>
           </div>
         </div>
-        <button class="profile__add-images-button button"></button>
+        <button
+          type="button"
+          class="profile__add-images-button button"
+        ></button>
       </section>
       <section>
         <ul class="photo-cards">
@@ -46,6 +49,7 @@
             <div class="photo-card__caption">
               <h2 class="photo-card__title">Мехико</h2>
               <button
+                type="button"
                 class="photo-card__like-button photo-card__like-button_active"
               ></button>
             </div>
@@ -61,6 +65,7 @@
             <div class="photo-card__caption">
               <h2 class="photo-card__title">Москва</h2>
               <button
+                type="button"
                 class="photo-card__like-button photo-card__like-button_active"
               ></button>
             </div>
@@ -76,6 +81,7 @@
             <div class="photo-card__caption">
               <h2 class="photo-card__title">Дубаи</h2>
               <button
+                type="button"
                 class="photo-card__like-button photo-card__like-button_active"
               ></button>
             </div>
@@ -91,6 +97,7 @@
             <div class="photo-card__caption">
               <h2 class="photo-card__title">Лондон</h2>
               <button
+                type="button"
                 class="photo-card__like-button photo-card__like-button_active"
               ></button>
             </div>
@@ -106,6 +113,7 @@
             <div class="photo-card__caption">
               <h2 class="photo-card__title">Париж</h2>
               <button
+                type="button"
                 class="photo-card__like-button photo-card__like-button_active"
               ></button>
             </div>
@@ -121,6 +129,7 @@
             <div class="photo-card__caption">
               <h2 class="photo-card__title">Нью-Йорк</h2>
               <button
+                type="button"
                 class="photo-card__like-button photo-card__like-button_active"
               ></button>
             </div>
@@ -130,7 +139,7 @@
     </main>
     <div class="popup popup_opened">
       <div class="popup__container">
-        <button class="popup__button-close button"></button>
+        <button type="button" class="popup__button-close button"></button>
         <form name="user-data" class="user-info-form">
           <h2 class="user-info-form__title">Редактировать профиль</h2>
           <div class="user-info-form__fields">
@@ -146,7 +155,9 @@
               class="user-info-form__field"
               placeholder="Исследователь океана"
             />
-            <button class="user-info-form__button-save">Сохранить</button>
+            <button type="submit" class="user-info-form__button-save">
+              Сохранить
+            </button>
           </div>
         </form>
       </div>
