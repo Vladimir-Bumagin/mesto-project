@@ -137,23 +137,31 @@
         </ul>
       </section>
     </main>
-    <div class="popup popup_opened">
+    <div class="popup" id="editProfile">
       <div class="popup__container">
-        <button type="button" class="popup__button-close button"></button>
+        <button
+          id="user-close-button"
+          type="button"
+          class="popup__button-close button"
+        ></button>
         <form name="user-data" class="user-info-form">
           <h2 class="user-info-form__title">Редактировать профиль</h2>
           <div class="user-info-form__fields">
             <input
+              id="user-name"
               name="user-name"
               type="text"
               class="user-info-form__field"
-              placeholder="Жак-Ив-Кусто"
+              placeholder="Имя пользователя"
+              value="Жак-Ив Кусто"
             />
             <input
+              id="career"
               name="career"
               type="text"
               class="user-info-form__field"
-              placeholder="Исследователь океана"
+              placeholder="Род деятельности"
+              value="Исследователь океана"
             />
             <button type="submit" class="user-info-form__button-save">
               Сохранить
@@ -162,8 +170,42 @@
         </form>
       </div>
     </div>
+    <div class="popup" id="addImages">
+      <div class="popup__container">
+        <button
+          id="image-close-button"
+          type="button"
+          class="popup__button-close button"
+        ></button>
+        <form name="user-data" class="user-info-form">
+          <h2 class="user-info-form__title">Новое место</h2>
+          <div class="user-info-form__fields">
+            <input
+              id="place-name"
+              name="place-name"
+              type="text"
+              class="user-info-form__field"
+              placeholder="Название"
+              value="Жак-Ив Кусто"
+            />
+            <input
+              id="p[ace-link"
+              name="p[ace-link"
+              type="url"
+              class="user-info-form__field"
+              placeholder="Ссылка на картинку"
+              value=""
+            />
+            <button type="submit" class="user-info-form__button-save">
+              Создать
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
     <footer class="footer">
       <p class="footer__copyright">&copy; 2020 Mesto Russia</p>
     </footer>
+    <script src="/script.js"></script>
   </body>
 </html>

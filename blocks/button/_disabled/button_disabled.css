@@ -1,0 +1,4 @@
+.button_disabled {
+  cursor: default;
+  background-color: #f1f1f1;
+}
