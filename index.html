@@ -45,6 +45,10 @@
                 alt="Мехико с высоты."
                 class="photo-card__image"
               />
+              <button
+                class="photo-card__delete-button button"
+                type="reset"
+              ></button>
             </div>
             <div class="photo-card__caption">
               <h2 class="photo-card__title">Мехико</h2>
@@ -186,7 +190,7 @@
               type="text"
               class="user-info-form__field"
               placeholder="Название"
-              value="Жак-Ив Кусто"
+              value=""
             />
             <input
               id="p[ace-link"
@@ -206,6 +210,28 @@
     <footer class="footer">
       <p class="footer__copyright">&copy; 2020 Mesto Russia</p>
     </footer>
-    <script src="/script.js"></script>
+    <template id="photo-card">
+      <li class="photo-card">
+        <div class="photo-card__image-wrapper">
+          <img
+            src="./images/Mexico.jpg"
+            alt="Мехико с высоты."
+            class="photo-card__image"
+          />
+          <button
+            class="photo-card__delete-button button"
+            type="reset"
+          ></button>
+        </div>
+        <div class="photo-card__caption">
+          <h2 class="photo-card__title">Мехико</h2>
+          <button
+            type="button"
+            class="photo-card__like-button photo-card__like-button_active"
+          ></button>
+        </div>
+      </li>
+    </template>
+    <script src="./script.js"></script>
   </body>
 </html>

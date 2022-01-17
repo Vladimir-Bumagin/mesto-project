@@ -1,0 +1,12 @@
+.photo-card__delete-button {
+  background-color: inherit;
+  background-image: url(../../../images/Trash.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 19px;
+  width: 18px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
