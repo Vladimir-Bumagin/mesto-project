@@ -1,0 +1,6 @@
+.add-image-form__fields {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+}

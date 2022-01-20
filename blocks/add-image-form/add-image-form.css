@@ -1,0 +1,12 @@
+.add-image-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: calc(330px - 34px - 37px);
+}
+
+@media screen and (max-width: 520px) {
+  .add-image-form {
+    min-height: calc(322px - 25px - 22px);
+  }
+}

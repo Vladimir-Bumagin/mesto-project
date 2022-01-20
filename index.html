@@ -65,6 +65,10 @@
                 alt="Высотные бизнес-здания Делового центра Москвы на берегу канала."
                 class="photo-card__image"
               />
+              <button
+                class="photo-card__delete-button button"
+                type="reset"
+              ></button>
             </div>
             <div class="photo-card__caption">
               <h2 class="photo-card__title">Москва</h2>
@@ -181,26 +185,26 @@
           type="button"
           class="popup__button-close button"
         ></button>
-        <form name="user-data" class="user-info-form">
-          <h2 class="user-info-form__title">Новое место</h2>
-          <div class="user-info-form__fields">
+        <form name="add-image" class="add-image-form">
+          <h2 class="add-image-form__title">Новое место</h2>
+          <div class="add-image-form__fields">
             <input
               id="place-name"
               name="place-name"
               type="text"
-              class="user-info-form__field"
+              class="add-image-form__field"
               placeholder="Название"
               value=""
             />
             <input
-              id="p[ace-link"
-              name="p[ace-link"
+              id="place-link"
+              name="place-link"
               type="url"
-              class="user-info-form__field"
+              class="add-image-form__field"
               placeholder="Ссылка на картинку"
               value=""
             />
-            <button type="submit" class="user-info-form__button-save">
+            <button type="submit" class="add-image-form__button-save">
               Создать
             </button>
           </div>
@@ -213,22 +217,15 @@
     <template id="photo-card">
       <li class="photo-card">
         <div class="photo-card__image-wrapper">
-          <img
-            src="./images/Mexico.jpg"
-            alt="Мехико с высоты."
-            class="photo-card__image"
-          />
+          <img class="photo-card__image" />
           <button
             class="photo-card__delete-button button"
             type="reset"
           ></button>
         </div>
         <div class="photo-card__caption">
-          <h2 class="photo-card__title">Мехико</h2>
-          <button
-            type="button"
-            class="photo-card__like-button photo-card__like-button_active"
-          ></button>
+          <h2 class="photo-card__title"></h2>
+          <button type="button" class="photo-card__like-button"></button>
         </div>
       </li>
     </template>
