@@ -38,7 +38,7 @@
       </section>
       <section>
         <ul class="photo-cards">
-          <li class="photo-card">
+          <!-- <li class="photo-card">
             <div class="photo-card__image-wrapper">
               <img
                 src="./images/Mexico.jpg"
@@ -141,10 +141,44 @@
                 class="photo-card__like-button photo-card__like-button_active"
               ></button>
             </div>
-          </li>
+          </li> -->
         </ul>
       </section>
     </main>
+
+    <div class="popup" id="addImages">
+      <div class="popup__container">
+        <button
+          id="image-close-button"
+          type="button"
+          class="popup__button-close button"
+        ></button>
+        <form name="add-image" class="add-image-form">
+          <h2 class="add-image-form__title">Новое место</h2>
+          <div class="add-image-form__fields">
+            <input
+              id="place-name"
+              name="place-name"
+              type="text"
+              class="add-image-form__field"
+              placeholder="Название"
+              value=""
+            />
+            <input
+              id="place-link"
+              name="place-link"
+              type="url"
+              class="add-image-form__field"
+              placeholder="Ссылка на картинку"
+              value=""
+            />
+            <button type="submit" class="add-image-form__button-save">
+              Создать
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
     <div class="popup" id="editProfile">
       <div class="popup__container">
         <button
@@ -178,37 +212,15 @@
         </form>
       </div>
     </div>
-    <div class="popup" id="addImages">
-      <div class="popup__container">
+    <div class="popup popup_wath-image" id="watchImage">
+      <div class="popup__container popup__container_photo">
         <button
-          id="image-close-button"
+          id="watchImageCloser"
           type="button"
           class="popup__button-close button"
         ></button>
-        <form name="add-image" class="add-image-form">
-          <h2 class="add-image-form__title">Новое место</h2>
-          <div class="add-image-form__fields">
-            <input
-              id="place-name"
-              name="place-name"
-              type="text"
-              class="add-image-form__field"
-              placeholder="Название"
-              value=""
-            />
-            <input
-              id="place-link"
-              name="place-link"
-              type="url"
-              class="add-image-form__field"
-              placeholder="Ссылка на картинку"
-              value=""
-            />
-            <button type="submit" class="add-image-form__button-save">
-              Создать
-            </button>
-          </div>
-        </form>
+        <img src="#" alt="" class="watch-image" />
+        <h3 class="image-caption"></h3>
       </div>
     </div>
     <footer class="footer">
