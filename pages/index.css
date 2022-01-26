@@ -26,6 +26,7 @@
 @import url(../blocks/popup/__container/popup__container.css);
 @import url(../blocks/popup/_watch-image/popup_watch-image.css);
 @import url(../blocks/popup/__container/_photo/popup__container_photo.css);
+@import url(../blocks/popup/__image-full-screen/popup__image-full-screen.css);
 @import url(../blocks/user-info-form/user-info-form.css);
 @import url(../blocks/user-info-form/__title/user-info-form__title.css);
 @import url(../blocks/user-info-form/__fields/user-info-form__fields.css);

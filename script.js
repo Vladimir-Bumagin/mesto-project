@@ -9,12 +9,12 @@ const userCareer = userForm.querySelector("#career");
 const profileName = document.querySelector(".profile__title");
 const profileCareer = document.querySelector(".profile__subtitle");
 const photo = document.querySelector(".photo-card__image");
-const editProfile = document.querySelector("#editProfile");
+const editProfile = document.querySelector("#edit-profile");
 
-const watchImages = document.querySelector("#watchImage");
-const watchImage = document.querySelector(".watch-image");
+const watchImages = document.querySelector("#watch-image-popup");
+const watchImage = document.querySelector(".popup__image-full-screen");
 const imageCaption = document.querySelector(".image-caption");
-const watchImageCloseButton = document.querySelector("#watchImageCloser");
+const watchImageCloseButton = document.querySelector("#watch-image-closer");
 
 function closePopUp(popUp) {
   popUp.classList.remove("popup_opened");
@@ -47,12 +47,12 @@ function openPopUpUser() {
     closePopUp(editProfile);
   });
 }
-
+const addImages = document.querySelector("#add-images");
+const popUpAddImageCloseButton = addImages.querySelector(
+    "#image-close-button");
 function openPopUpImage() {
-  const addImages = document.querySelector("#addImages");
-  const popUpAddImageCloseButton = addImages.querySelector(
-    "#image-close-button"
-  );
+
+ 
   openPopUp(addImages);
   placeName.value = "";
   imageLink.value = "";
