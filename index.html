@@ -37,112 +37,7 @@
         ></button>
       </section>
       <section>
-        <ul class="photo-cards">
-          <!-- <li class="photo-card">
-            <div class="photo-card__image-wrapper">
-              <img
-                src="./images/Mexico.jpg"
-                alt="Мехико с высоты."
-                class="photo-card__image"
-              />
-              <button
-                class="photo-card__delete-button button"
-                type="reset"
-              ></button>
-            </div>
-            <div class="photo-card__caption">
-              <h2 class="photo-card__title">Мехико</h2>
-              <button
-                type="button"
-                class="photo-card__like-button photo-card__like-button_active"
-              ></button>
-            </div>
-          </li>
-          <li class="photo-card">
-            <div class="photo-card__image-wrapper">
-              <img
-                src="./images/Moscow.jpg"
-                alt="Высотные бизнес-здания Делового центра Москвы на берегу канала."
-                class="photo-card__image"
-              />
-              <button
-                class="photo-card__delete-button button"
-                type="reset"
-              ></button>
-            </div>
-            <div class="photo-card__caption">
-              <h2 class="photo-card__title">Москва</h2>
-              <button
-                type="button"
-                class="photo-card__like-button photo-card__like-button_active"
-              ></button>
-            </div>
-          </li>
-          <li class="photo-card">
-            <div class="photo-card__image-wrapper">
-              <img
-                src="./images/Dubai.jpg"
-                alt="Небоскрёб Бурдж Халифа в Дубаи - самое высокое здание в мире."
-                class="photo-card__image"
-              />
-            </div>
-            <div class="photo-card__caption">
-              <h2 class="photo-card__title">Дубаи</h2>
-              <button
-                type="button"
-                class="photo-card__like-button photo-card__like-button_active"
-              ></button>
-            </div>
-          </li>
-          <li class="photo-card">
-            <div class="photo-card__image-wrapper">
-              <img
-                src="./images/London.jpg"
-                alt="Тауэрский мост в Лондоне."
-                class="photo-card__image"
-              />
-            </div>
-            <div class="photo-card__caption">
-              <h2 class="photo-card__title">Лондон</h2>
-              <button
-                type="button"
-                class="photo-card__like-button photo-card__like-button_active"
-              ></button>
-            </div>
-          </li>
-          <li class="photo-card">
-            <div class="photo-card__image-wrapper">
-              <img
-                src="./images/Paris.jpg"
-                alt="Эйфелева башня с подсветкой вечером."
-                class="photo-card__image"
-              />
-            </div>
-            <div class="photo-card__caption">
-              <h2 class="photo-card__title">Париж</h2>
-              <button
-                type="button"
-                class="photo-card__like-button photo-card__like-button_active"
-              ></button>
-            </div>
-          </li>
-          <li class="photo-card">
-            <div class="photo-card__image-wrapper">
-              <img
-                src="./images/New-York.jpg"
-                alt="Ночной Нью-Йорк с высоты."
-                class="photo-card__image"
-              />
-            </div>
-            <div class="photo-card__caption">
-              <h2 class="photo-card__title">Нью-Йорк</h2>
-              <button
-                type="button"
-                class="photo-card__like-button photo-card__like-button_active"
-              ></button>
-            </div>
-          </li> -->
-        </ul>
+        <ul class="photo-cards"></ul>
       </section>
     </main>
 
@@ -160,6 +55,7 @@
               id="place-name"
               name="place-name"
               type="text"
+              required
               class="add-image-form__field"
               placeholder="Название"
               value=""
@@ -168,6 +64,7 @@
               id="place-link"
               name="place-link"
               type="url"
+              required
               class="add-image-form__field"
               placeholder="Ссылка на картинку"
               value=""
@@ -217,10 +114,10 @@
         <button
           id="watch-image-closer"
           type="button"
-          class="popup__button-close button"
+          class="popup__button-close button popup__button-close_mobile"
         ></button>
         <img src="#" alt="" class="popup__image-full-screen" />
-        <h3 class="image-caption"></h3>
+        <h3 class="popup__image-caption"></h3>
       </div>
     </div>
     <footer class="footer">
